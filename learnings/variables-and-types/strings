@@ -1,0 +1,11 @@
+name="Nandakumar";
+street="15 KTK Thangamani Street";
+town="Erode";
+state='Tamilnadu';
+country='India';
+
+print(name);
+print(street);
+print(town);
+print(state);
+print(country);

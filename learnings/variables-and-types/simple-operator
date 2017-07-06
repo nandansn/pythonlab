@@ -1,0 +1,19 @@
+x = 1;
+y = 2;
+z = x + y;
+
+print(z);
+
+fName = "Nandakumar";
+lName = "Rangasamy";
+
+print(fName + lName);
+
+#print(fName + x);
+#Mixing operators between numbers and strings is not supported
+
+
+#Multiple assignments
+a,b,c =3,4,5;
+
+print(a+b+c);

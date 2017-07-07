@@ -15,16 +15,6 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="lists.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Operators/lists.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="30" lean-forward="false" selection-start-line="3" selection-start-column="30" selection-end-line="3" selection-end-column="30" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="stringFormat.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/StringFormatting/stringFormat.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -105,11 +95,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="problem.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="problem.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/BooleanOperators/problem.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="simpleforloop.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Loops/simpleforloop.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="374">
+              <caret line="22" column="16" lean-forward="false" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -141,6 +141,7 @@
         <option value="$PROJECT_DIR$/BooleanOperators/isOperator.py" />
         <option value="$PROJECT_DIR$/BooleanOperators/notoperator.py" />
         <option value="$PROJECT_DIR$/BooleanOperators/problem.py" />
+        <option value="$PROJECT_DIR$/Loops/simpleforloop.py" />
       </list>
     </option>
   </component>
@@ -188,7 +189,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="BooleanOperators" />
+              <option name="myItemId" value="Loops" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -199,24 +200,7 @@
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$USER_HOME$" />
   </component>
-  <component name="RunManager" selected="Python.problem">
-    <configuration default="false" name="AndOr" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/BooleanOperators" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="learnings" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/BooleanOperators/AndOr.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Python.simpleforloop">
     <configuration default="false" name="InOperator" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -281,6 +265,23 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="learnings" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/BooleanOperators/problem.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="simpleforloop" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Loops" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="learnings" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Loops/simpleforloop.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -433,19 +434,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.AndOr" />
-      <item index="1" class="java.lang.String" itemvalue="Python.InOperator" />
-      <item index="2" class="java.lang.String" itemvalue="Python.isOperator" />
-      <item index="3" class="java.lang.String" itemvalue="Python.notoperator" />
-      <item index="4" class="java.lang.String" itemvalue="Python.problem" />
+      <item index="0" class="java.lang.String" itemvalue="Python.InOperator" />
+      <item index="1" class="java.lang.String" itemvalue="Python.isOperator" />
+      <item index="2" class="java.lang.String" itemvalue="Python.notoperator" />
+      <item index="3" class="java.lang.String" itemvalue="Python.problem" />
+      <item index="4" class="java.lang.String" itemvalue="Python.simpleforloop" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.problem" />
-        <item index="1" class="java.lang.String" itemvalue="Python.notoperator" />
-        <item index="2" class="java.lang.String" itemvalue="Python.isOperator" />
-        <item index="3" class="java.lang.String" itemvalue="Python.InOperator" />
-        <item index="4" class="java.lang.String" itemvalue="Python.AndOr" />
+        <item index="0" class="java.lang.String" itemvalue="Python.simpleforloop" />
+        <item index="1" class="java.lang.String" itemvalue="Python.problem" />
+        <item index="2" class="java.lang.String" itemvalue="Python.notoperator" />
+        <item index="3" class="java.lang.String" itemvalue="Python.isOperator" />
+        <item index="4" class="java.lang.String" itemvalue="Python.InOperator" />
       </list>
     </recent_temporary>
   </component>
@@ -454,7 +455,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="10" y="20" width="1346" height="688" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -649,6 +650,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Loops/simpleforloop.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="16" lean-forward="false" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="16" />
           <folding />
         </state>
       </provider>

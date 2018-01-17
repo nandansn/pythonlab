@@ -2,16 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="13e19972-4d14-4dd4-93aa-6c508f27f5fd" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/learnings/Loops/Last2.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/learnings/Loops/string_splosion.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/learnings/codingbat/warmup/front_back.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/learnings/codingbat/warmup/missing_char.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/learnings/codingbat/warmup2/array_front9.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/learnings/codingbat/warmup2/front_times.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/learnings/codingbat/warmup2/string_bits.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/learnings/codingbat/warmup2/string_times.py" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Learning/djexample.py" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Learning/dictexample.py" afterPath="$PROJECT_DIR$/Learning/dictexample.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/learnings/codingbat/string/hello_name.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/learnings/codingbat/string/make_abba.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/learnings/codingbat/string/make_tags.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/learnings/codingbat/warmup2/array123.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/learnings/codingbat/warmup2/array_count9.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/learnings/codingbat/warmup2/count_code.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -21,108 +19,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Last2.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/learnings/Loops/Last2.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="array_front9.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/learnings/codingbat/warmup2/array_front9.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" column="16" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="13" selection-end-column="16" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="forloopexample.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Learning/forloopexample.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="276">
-              <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AndOr.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/learnings/BooleanOperators/AndOr.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="InOperator.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/learnings/BooleanOperators/InOperator.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="numbers" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/learnings/variables-and-types/numbers">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="simple-operator" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/learnings/variables-and-types/simple-operator">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="strings" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/learnings/variables-and-types/strings">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="problemone.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/learnings/Loops/problemone.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="simpleforloop.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/learnings/Loops/simpleforloop.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="23" lean-forward="true" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -151,12 +48,18 @@
         <option value="$PROJECT_DIR$/learnings/Loops/string_splosion.py" />
         <option value="$PROJECT_DIR$/learnings/Loops/Last2.py" />
         <option value="$PROJECT_DIR$/learnings/codingbat/warmup2/array_front9.py" />
+        <option value="$PROJECT_DIR$/learnings/codingbat/warmup2/array_count9.py" />
+        <option value="$PROJECT_DIR$/learnings/codingbat/warmup2/array123.py" />
+        <option value="$PROJECT_DIR$/learnings/codingbat/warmup2/count_code.py" />
+        <option value="$PROJECT_DIR$/learnings/codingbat/string/hello_name.py" />
+        <option value="$PROJECT_DIR$/learnings/codingbat/string/make_abba.py" />
+        <option value="$PROJECT_DIR$/learnings/codingbat/string/make_tags.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="10" />
-    <option name="y" value="20" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-7" />
+    <option name="y" value="47" />
     <option name="width" value="1346" />
     <option name="height" value="688" />
   </component>
@@ -186,50 +89,7 @@
             <path>
               <item name="pythonlab" type="b2602c69:ProjectViewProjectNode" />
               <item name="pythonlab" type="462c0819:PsiDirectoryNode" />
-              <item name="Learning" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="pythonlab" type="b2602c69:ProjectViewProjectNode" />
-              <item name="pythonlab" type="462c0819:PsiDirectoryNode" />
-              <item name="Learning" type="462c0819:PsiDirectoryNode" />
-              <item name="tutorials" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="pythonlab" type="b2602c69:ProjectViewProjectNode" />
-              <item name="pythonlab" type="462c0819:PsiDirectoryNode" />
               <item name="learnings" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="pythonlab" type="b2602c69:ProjectViewProjectNode" />
-              <item name="pythonlab" type="462c0819:PsiDirectoryNode" />
-              <item name="learnings" type="462c0819:PsiDirectoryNode" />
-              <item name="BooleanOperators" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="pythonlab" type="b2602c69:ProjectViewProjectNode" />
-              <item name="pythonlab" type="462c0819:PsiDirectoryNode" />
-              <item name="learnings" type="462c0819:PsiDirectoryNode" />
-              <item name="codingbat" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="pythonlab" type="b2602c69:ProjectViewProjectNode" />
-              <item name="pythonlab" type="462c0819:PsiDirectoryNode" />
-              <item name="learnings" type="462c0819:PsiDirectoryNode" />
-              <item name="codingbat" type="462c0819:PsiDirectoryNode" />
-              <item name="warmup" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="pythonlab" type="b2602c69:ProjectViewProjectNode" />
-              <item name="pythonlab" type="462c0819:PsiDirectoryNode" />
-              <item name="learnings" type="462c0819:PsiDirectoryNode" />
-              <item name="codingbat" type="462c0819:PsiDirectoryNode" />
-              <item name="warmup2" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="pythonlab" type="b2602c69:ProjectViewProjectNode" />
-              <item name="pythonlab" type="462c0819:PsiDirectoryNode" />
-              <item name="learnings" type="462c0819:PsiDirectoryNode" />
-              <item name="Loops" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -239,6 +99,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -257,7 +118,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.array_front9">
+  <component name="RunManager" selected="Python.array123">
     <configuration name="Last2" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -275,6 +136,40 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
+    <configuration name="array123" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/learnings/codingbat/warmup2" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="pythonlab" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/learnings/codingbat/warmup2/array123.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
+    <configuration name="array_count9" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/learnings/codingbat/warmup2" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="pythonlab" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/learnings/codingbat/warmup2/array_count9.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
     <configuration name="array_front9" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -288,40 +183,6 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="pythonlab" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/learnings/codingbat/warmup2/array_front9.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-    </configuration>
-    <configuration name="front_times" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/learnings/codingbat/warmup2" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="pythonlab" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/learnings/codingbat/warmup2/front_times.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-    </configuration>
-    <configuration name="string_bits" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/learnings/codingbat/warmup2" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="pythonlab" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/learnings/codingbat/warmup2/string_bits.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -344,19 +205,19 @@
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.front_times" />
-      <item index="1" class="java.lang.String" itemvalue="Python.string_bits" />
-      <item index="2" class="java.lang.String" itemvalue="Python.string_splosion" />
-      <item index="3" class="java.lang.String" itemvalue="Python.Last2" />
-      <item index="4" class="java.lang.String" itemvalue="Python.array_front9" />
+      <item index="0" class="java.lang.String" itemvalue="Python.string_splosion" />
+      <item index="1" class="java.lang.String" itemvalue="Python.Last2" />
+      <item index="2" class="java.lang.String" itemvalue="Python.array_front9" />
+      <item index="3" class="java.lang.String" itemvalue="Python.array_count9" />
+      <item index="4" class="java.lang.String" itemvalue="Python.array123" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.array_front9" />
-        <item index="1" class="java.lang.String" itemvalue="Python.Last2" />
-        <item index="2" class="java.lang.String" itemvalue="Python.string_splosion" />
-        <item index="3" class="java.lang.String" itemvalue="Python.string_bits" />
-        <item index="4" class="java.lang.String" itemvalue="Python.front_times" />
+        <item index="0" class="java.lang.String" itemvalue="Python.array123" />
+        <item index="1" class="java.lang.String" itemvalue="Python.array_count9" />
+        <item index="2" class="java.lang.String" itemvalue="Python.array_front9" />
+        <item index="3" class="java.lang.String" itemvalue="Python.Last2" />
+        <item index="4" class="java.lang.String" itemvalue="Python.string_splosion" />
       </list>
     </recent_temporary>
   </component>
@@ -364,13 +225,12 @@
     <option name="remove_strategy" value="false" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
+    <frame x="-7" y="47" width="1346" height="688" extended-state="0" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25037822" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25738725" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3286385" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36020583" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39906102" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -425,17 +285,59 @@
           <url>file://$PROJECT_DIR$/learnings/codingbat/warmup2/array_front9.py</url>
           <option name="timeStamp" value="13" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/learnings/codingbat/warmup2/array_count9.py</url>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/learnings/codingbat/warmup2/array123.py</url>
+          <line>9</line>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/learnings/codingbat/warmup2/array123.py</url>
+          <line>1</line>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/learnings/codingbat/warmup2/array123.py</url>
+          <line>2</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="14" />
+      <option name="time" value="19" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/learnings/Loops/problemone.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/learnings/Loops/simpleforloop.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="23" lean-forward="true" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/learnings/codingbat/warmup2/array_front9.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="16" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="13" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/learnings/codingbat/warmup/missing_char.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="30" lean-forward="false" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="30" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -451,7 +353,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="14" lean-forward="true" selection-start-line="1" selection-start-column="4" selection-end-line="2" selection-end-column="14" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -459,7 +360,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="18" lean-forward="false" selection-start-line="1" selection-start-column="8" selection-end-line="2" selection-end-column="18" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -467,7 +367,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="17" lean-forward="true" selection-start-line="1" selection-start-column="4" selection-end-line="4" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -475,7 +374,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="1" column="4" lean-forward="false" selection-start-line="1" selection-start-column="4" selection-end-line="4" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -491,7 +389,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -499,7 +396,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -607,7 +503,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="30" lean-forward="false" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="30" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -615,7 +510,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -623,7 +517,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -639,7 +532,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="18" lean-forward="false" selection-start-line="1" selection-start-column="8" selection-end-line="2" selection-end-column="18" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -647,7 +539,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="14" lean-forward="true" selection-start-line="1" selection-start-column="4" selection-end-line="2" selection-end-column="14" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -655,7 +546,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="17" lean-forward="true" selection-start-line="1" selection-start-column="4" selection-end-line="4" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -663,7 +553,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="1" column="4" lean-forward="false" selection-start-line="1" selection-start-column="4" selection-end-line="4" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -675,10 +564,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/learnings/Loops/problemone.py">
+    <entry file="file://$PROJECT_DIR$/learnings/codingbat/warmup2/array_front9.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="221">
+          <caret line="13" column="16" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="13" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Learning/forloopexample.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -723,10 +620,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Learning/forloopexample.py">
+    <entry file="file://$PROJECT_DIR$/learnings/Loops/problemone.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -734,15 +631,55 @@
     <entry file="file://$PROJECT_DIR$/learnings/Loops/simpleforloop.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
-          <caret line="6" column="23" lean-forward="true" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
+          <caret line="6" column="23" lean-forward="false" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/learnings/codingbat/warmup2/array_front9.py">
+    <entry file="file://$PROJECT_DIR$/learnings/codingbat/warmup2/array_count9.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="16" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="13" selection-end-column="16" />
+        <state relative-caret-position="85">
+          <caret line="5" column="18" lean-forward="true" selection-start-line="1" selection-start-column="1" selection-end-line="5" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/learnings/codingbat/warmup2/array123.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/learnings/codingbat/warmup2/count_code.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/learnings/codingbat/string/hello_name.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="29" lean-forward="true" selection-start-line="1" selection-start-column="29" selection-end-line="1" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/learnings/codingbat/string/make_abba.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="4" lean-forward="false" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/learnings/codingbat/string/make_tags.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="46" lean-forward="true" selection-start-line="1" selection-start-column="46" selection-end-line="1" selection-end-column="46" />
           <folding />
         </state>
       </provider>

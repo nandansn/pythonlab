@@ -23,6 +23,6 @@ displayList(names)
 
 # slicing list
 slicedNames = getSlicedList(names,0,len(names)/2)
-
 print(slicedNames)
+
 

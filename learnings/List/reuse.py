@@ -12,3 +12,9 @@ def createNameList(count=0):
         name = input("Enter name:")
         names.append(name)
     return names
+
+def searchName(name="",names=[]):
+    if name in names:
+        return name+ " found in the list."
+    else:
+        return name+ " not found in the list."

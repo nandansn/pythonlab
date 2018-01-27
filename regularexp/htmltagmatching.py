@@ -9,7 +9,7 @@ patternObject = re.compile(pattern)
 
 wd = os.getcwd()
 
-filePath = wd + "\\nanda.html"
+filePath = wd + "\\regularexp\\nanda.html"
 
 file = open(filePath)
 

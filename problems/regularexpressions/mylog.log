@@ -1,0 +1,11 @@
+StudentException: Error finding students
+        at StudentManager.findStudents(StudentManager.java:13)
+        at StudentProgram.main(StudentProgram.java:9)
+Caused by: DAOException: Error querying students from database
+        at StudentDAO.list(StudentDAO.java:11)
+        at StudentManager.findStudents(StudentManager.java:11)
+        ... 1 more
+Caused by: java.sql.SQLException: Syntax Error
+        at DatabaseUtils.executeQuery(DatabaseUtils.java:5)
+        at StudentDAO.list(StudentDAO.java:8)
+        ... 2 more

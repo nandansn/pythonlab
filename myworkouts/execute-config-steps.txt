@@ -1,0 +1,24 @@
+1.Login to dipc
+2.Navigate to preparation page
+3.Configure oracle as source and file as target
+4.Enter the file name, with the length 400 chars.
+5.click save and transform.
+6.In the interactive transform page, save and run button is not visible.
+
+Expected:
+
+Actual:
+
+################################################################################################
+
+1.Login to dipc
+2.Navigate to data prep page
+3.Configure oracle as source, File as target
+4.Click save and transform
+5.Click Save and Run
+
+Expected:
+
+Actual:
+
+##################################################################################

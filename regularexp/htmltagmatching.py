@@ -59,6 +59,10 @@ file.close()
 
 print("Map:",tagMap)
 
+sumTags = 0
 
 
+for key, value in tagMap.items():
+    sumTags = sumTags + value
 
+print('total tags:',sumTags)

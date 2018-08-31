@@ -1,5 +1,5 @@
 print(""" This is about arithmetic operators like,
-+, -, *, /, %, //(floor division operator""")
++, -, *, /, %, //(floor division operator), **(power operator)""")
 
 print (" Example: ")
 a = 10

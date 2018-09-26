@@ -23,6 +23,8 @@ print(dbHost,dbHostPort,dbUserName,dbUserPwd,dbServiceId)
 connectionString = dbHost + ':' + dbHostPort + '/' + dbServiceId
 
 connectionString = 'DICS_stage/'+dbUserPwd+'@' + dbHost +':'+dbHostPort+'/db3030.us.oracle.com'
+
+P
 print(connectionString)
 connection  = cx_Oracle.connect(u''+connectionString)
 

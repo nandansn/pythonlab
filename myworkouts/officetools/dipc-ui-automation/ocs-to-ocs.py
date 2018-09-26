@@ -1,5 +1,6 @@
 import os
 
+
 os.environ["PATH"] += os.pathsep + r'C:\Users\nrangasa.ORADEV\chromedriver\chromedriver_win32\chromedriver.exe'
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
@@ -7,13 +8,24 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
 
+from selenium.webdriver.common.action_chains import *
+
 import time
 
+host ='slc12mjj.us.oracle.com'
+port ='21506'
 
+url = "http://host:port/dicloud/app/preparation"
+
+url = url.replace('host',host).replace('port',port)
+ 
+print(url)
 
 driver = webdriver.Chrome('C:/Users/nrangasa.ORADEV/chromedriver/chromedriver_win32/chromedriver.exe')
-driver.get("http://den01fqa.us.oracle.com:21323/dicloud/app/preparation")
+driver.get(url)
 driver.maximize_window()
+
+
 
 def login():
     #login
@@ -41,32 +53,39 @@ def create_source():
     dpSourceConnection = driver.find_element_by_xpath('''//div[@id='oj-select-choice-srcConnection']''')
     dpSourceConnection.click()
     dpSourceConnectionSearch = driver.find_element_by_xpath('''//input[@type='text' and @title='Search field']''')
-    dpSourceConnectionList = driver.find_element_by_xpath('''//div[@id='oj-listbox-drop']//ul[@id='oj-listbox-results-srcConnection']//li//div[@aria-label='OCS_CONN_DP_SRC']''')
+    dpSourceConnectionList = driver.find_element_by_xpath('''//div[@id='oj-listbox-drop']//ul[@id='oj-listbox-results-srcConnection']//li//div[@aria-label='OCS_SRC_CON']''')
     dpSourceConnectionList.click()
     # select source folder
     WebDriverWait(driver,20).until(EC.presence_of_element_located((By.XPATH,'''//button[@id='srcFolderPicker_launcher']''')))
     sourceFolderPicker = driver.find_element_by_xpath('''//button[@id='srcFolderPicker_launcher']''')
     sourceFolderPicker.click()
     WebDriverWait(driver,20).until(EC.presence_of_element_located((By.XPATH,'''//button[contains(@data-bind,'applyFileSel')]''')))
-    WebDriverWait(driver,20).until(EC.presence_of_element_located((By.XPATH,'''//div[@id='srcFolderPicker_tree']/ul//li[@id='INSURANCE']''')))
-    sourceFolder = driver.find_element_by_xpath('''//div[@id='srcFolderPicker_tree']/ul//li[@id='INSURANCE']/a/span[contains(text(),'INSURANCE')]''')
+    WebDriverWait(driver,20).until(EC.presence_of_element_located((By.XPATH,'''//div[@id='srcFolderPicker_tree']/ul//li[@id='OCSDPTGT']''')))
+    sourceFolder = driver.find_element_by_xpath('''//div[@id='srcFolderPicker_tree']/ul//li[@id='OCSDPTGT']/a/span[contains(text(),'OCSDPTGT')]''')
     sourceFolder.click()
     selectSourceFolder = driver.find_element_by_xpath('''//button[contains(@data-bind,'applyFileSel')]''')
     selectSourceFolder.click()
 
      # select source file
+    ActionChains(driver).send_keys(Keys.PAGE_DOWN)
+    ActionChains(driver).send_keys(Keys.PAGE_DOWN)
+    ActionChains(driver).send_keys(Keys.PAGE_DOWN)
     WebDriverWait(driver,20).until(EC.presence_of_element_located((By.XPATH,'''//button[@id='srcFilePicker_launcher']''')))
 
     WebDriverWait(driver,20).until(EC.element_to_be_clickable((By.XPATH,'''//button[@id='srcFilePicker_launcher']''')))
-    selectSourceFile = driver.find_element_by_xpath('''//button[@id='srcFilePicker_launcher']/div/span[contains(text(),'Select...')]''')
-    selectSourceFile.click()
+    selectSourceFile = driver.find_element_by_xpath('''//button[@id='srcFilePicker_launcher']''')
+    time.sleep(10)
+    ActionChains(driver).move_to_element(selectSourceFile).click(selectSourceFile).perform()
+    
 
     WebDriverWait(driver,20).until(EC.presence_of_element_located((By.XPATH,'''//button[contains(@data-bind,'applyFileSel')]''')))
-    WebDriverWait(driver,20).until(EC.presence_of_element_located((By.XPATH,'''//div[@id='srcFilePicker_tree']/ul//li[@id='INSURANCE']''')))
-    sourceFile = driver.find_element_by_xpath('''//div[@id='srcFilePicker_tree']/ul//li[@id='INSURANCE-40K.DAT']/a/span[contains(text(),'INSURANCE-40K.DAT')]''')
+    WebDriverWait(driver,20).until(EC.presence_of_element_located((By.XPATH,'''//div[@id='srcFilePicker_tree']/ul//li[@id='test_data_user_details.txt']''')))
+    sourceFile = driver.find_element_by_xpath('''//div[@id='srcFilePicker_tree']/ul//li[@id='test_data_user_details.txt']/a/span[contains(text(),'test_data_user_details.txt')]''')
     sourceFile.click()
     selectSourceFile = driver.find_element_by_xpath('''//button[contains(@data-bind,'applyFileSel')]''')
     selectSourceFile.click()
+
+    time.sleep(10)
 
 def create_target():
     # select target connection
@@ -74,7 +93,7 @@ def create_target():
     dpTargetConnection.click()
 
     dpTargetConnectionSearch = driver.find_element_by_xpath('''//input[@type='text' and @title='Search field']''')
-    dpTargetConnectionList = driver.find_element_by_xpath('''//div[@id='oj-listbox-drop']//ul[@id='oj-listbox-results-trgtConnection']//li//div[@aria-label='OCS_CONN_DP_TGT']''')
+    dpTargetConnectionList = driver.find_element_by_xpath('''//div[@id='oj-listbox-drop']//ul[@id='oj-listbox-results-trgtConnection']//li//div[@aria-label='OCS_TGT_CON']''')
     dpTargetConnectionList.click()
 
     WebDriverWait(driver,20).until(EC.presence_of_element_located((By.XPATH,'''//button[@id='trgtFolderPicker_launcher']''')))
@@ -82,20 +101,38 @@ def create_target():
     targetFolderPicker.click()
 
     WebDriverWait(driver,20).until(EC.presence_of_element_located((By.XPATH,'''//button[contains(@data-bind,'applyFileSel')]''')))
-    WebDriverWait(driver,20).until(EC.presence_of_element_located((By.XPATH,'''//div[@id='trgtFolderPicker_tree']/ul//li[@id='INSURANCE']''')))
-    targetFolder = driver.find_element_by_xpath('''//div[@id='trgtFolderPicker_tree']/ul//li[@id='INSURANCE']/a/span[contains(text(),'INSURANCE')]''')
+    WebDriverWait(driver,20).until(EC.presence_of_element_located((By.XPATH,'''//div[@id='trgtFolderPicker_tree']/ul//li[@id='OCSDPTGT']''')))
+    targetFolder = driver.find_element_by_xpath('''//div[@id='trgtFolderPicker_tree']/ul//li[@id='OCSDPTGT']/a/span[contains(text(),'OCSDPTGT')]''')
     targetFolder.click()
     selectTargetFolder = driver.find_element_by_xpath('''//button[contains(@data-bind,'applyFileSel')]''')
     selectTargetFolder.click()
-
+    time.sleep(10)
     WebDriverWait(driver,20).until(EC.presence_of_element_located((By.XPATH,'''//input[@id='trgtFile']''')))
-    targetFile = driver.find_element_by_xpath('''//input[@id='trgtFile']''')
-    targetFile.send_keys('''OCS_TGT_FILE''')
+    targetFile = driver.find_element_by_id('trgtFile')
+
+    targetFile.send_keys('''OCS_TGT_DATA''')
+
+def save_and_transform():
+    driver.find_element_by_xpath("//input[@id='saveAndTransformTask']").click()
+    time.sleep(10)
+
+def save_and_run():
+    WebDriverWait(driver,60).until(EC.presence_of_element_located((By.XPATH,'''//div[@data-id='column']''')))
+    WebDriverWait(driver,60).until(EC.presence_of_element_located((By.XPATH,'''//div[@data-id='sample']''')))
+    WebDriverWait(driver,60).until(EC.element_to_be_clickable((By.XPATH,'''//input[@id='runTask']''')))
+    driver.find_element_by_xpath("//input[@id='runTask']").click()
+    time.sleep(60)
 
 
 
+login()
+create_name_dp()
+create_source()
+create_target()
+save_and_transform()
+save_and_run()
 
-time.sleep(10)
+driver.quit()
 
 
     
@@ -105,7 +142,7 @@ time.sleep(10)
 
 # check the job status
 
-driver.quit()
+
 
 #driver.get("http://slc12mxs.us.oracle.com:18599/dicloud/login.html")
 

@@ -5,8 +5,8 @@ ocsURL = '''https://gse00003349.storage.oraclecloud.com/auth/v1.0'''
 ocsSrcDir = '''OCSDPTGT'''
 ocsSrcFile = '''INSURANCE_TGT.txt'''
 
-ocsTgtDir = '''SRC_DIR'''
-ocsTgtFile = '''test_data_usr_null_fill.txt'''
+ocsTgtDir = '''OCSDPTGT'''
+ocsTgtFile = '''USER_OCS_TGT_slc12mjj'''
 
 ocsContainer = '''DIPC_METADATA_EXPORT'''
 

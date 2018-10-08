@@ -1,3 +1,1 @@
- {
-		"transformActions": []
-	}
+ {"transformActions":[{"actionType":"forceType","data":{"columnId":"36","columnName":"NON_BILLABLE_USAGE___CD","newDataType":"Decimal"}}]}

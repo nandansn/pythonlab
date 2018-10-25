@@ -1,21 +1,21 @@
 import requests
 
-ocsURL = '''https://gse00003349.storage.oraclecloud.com/auth/v1.0'''
+ocsURL = '''https://storage-den2.oraclecorp.com/auth/v1.0'''
 
 ocsSrcDir = '''OCSDPTGT'''
 ocsSrcFile = '''INSURANCE_TGT.txt'''
 
 ocsTgtDir = '''OCSDPTGT'''
-ocsTgtFile = '''USER_OCS_TGT_slc12mjj'''
+ocsTgtFile = '''OCS_FILE_USER_DATA.txt'''
 
-ocsContainer = '''DIPC_METADATA_EXPORT'''
+ocsContainer = '''DIPC'''
 
-ocsStorageURL = '''https://gse00003349.storage.oraclecloud.com/v1/Storage-gse00003349/'''
+ocsStorageURL = '''https://storage-den2.oraclecorp.com/v1/Storage-911cde94e9a749e380b658e7febb1c85/'''
 
 ocsTargetFileURL = ocsStorageURL + '/' + ocsContainer + '/' + ocsTgtDir + '/' + ocsTgtFile
 headers = {
-	'X-Storage-User': 'Storage-gse00003349:cloud.admin',
-	'X-Storage-Pass': 'inbornFeature@4'
+	'X-Storage-User': 'Storage-911cde94e9a749e380b658e7febb1c85:basavaraja.allundi@oracle.com',
+	'X-Storage-Pass': 'welcome1'
 }
 
 response = requests.get(ocsURL, headers=headers)

@@ -6,16 +6,16 @@ ocsSrcDir = '''OCSDPTGT'''
 ocsSrcFile = '''INSURANCE_TGT.txt'''
 
 ocsTgtDir = '''OCSDPTGT'''
-ocsTgtFile = '''OCS_FILE_USER_DATA.txt'''
+ocsTgtFile = '''OCS_OCS_TGT.txt'''
 
 ocsContainer = '''DIPC'''
 
-ocsStorageURL = '''https://storage-den2.oraclecorp.com/v1/Storage-911cde94e9a749e380b658e7febb1c85/'''
+ocsStorageURL = '''https://storage-den2.oraclecorp.com/v1/Storage-bc2587c4d9fd43edbf020f0696e3f80e/'''
 
 ocsTargetFileURL = ocsStorageURL + '/' + ocsContainer + '/' + ocsTgtDir + '/' + ocsTgtFile
 headers = {
-	'X-Storage-User': 'Storage-911cde94e9a749e380b658e7febb1c85:basavaraja.allundi@oracle.com',
-	'X-Storage-Pass': 'welcome1'
+	'X-Storage-User': 'Storage-bc2587c4d9fd43edbf020f0696e3f80e:nandakumar.rangasamy@oracle.com',
+	'X-Storage-Pass': 'dipcocs123'
 }
 
 response = requests.get(ocsURL, headers=headers)

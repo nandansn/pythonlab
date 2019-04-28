@@ -22,3 +22,5 @@ print('binary:',binary,'\n')
 print('ocatl:',octal,'\n')
 print('hexa:',hexa,'\n')
 
+print(''' built in functions ''', bin(8) , '\n' , oct(8) , '\n', hex(15))
+

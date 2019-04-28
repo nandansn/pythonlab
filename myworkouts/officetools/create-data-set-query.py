@@ -2,7 +2,7 @@ import openpyxl
 
 wb = openpyxl.load_workbook('C:\\Users\\nrangasa.ORADEV\\Downloads\\BenefitsCostSharing.csv\\Sample_Data_Set.xlsx')
 
-wbSheet = wb.active
+'''wbSheet = wb.active
 
 createTableQuery = ''' create table sample_source ( '''
 

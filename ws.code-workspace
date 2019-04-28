@@ -1,13 +1,42 @@
 {
-	"folders": [
-		{
-			"path": "."
-		},
-		{
-			"path": "C:\\Users\\nrangasa.ORADEV\\webiotest"
-		}
-	],
-	"settings": {
-		"python.pythonPath": "C:\\Program Files\\Python36\\python.exe"
-	}
+  "folders": [
+    {
+      "path": "."
+    },
+    {
+      "path": "C:\\Users\\nrangasa.ORADEV\\webiotest"
+    },
+    {
+      "path": "C:\\Users\\nrangasa.ORADEV\\git\\myrepo\\javascript"
+    },
+    {
+      "path": "C:\\Users\\nrangasa.ORADEV\\git\\myrepo\\webdriveriosample"
+    },
+    {
+      "path": "C:\\Users\\nrangasa.ORADEV\\git\\myrepo\\advancedjs"
+    },
+    {
+      "path": "C:\\Users\\nrangasa.ORADEV\\git\\dis\\dev\\dis\\ui\\src\\main\\webapp"
+    },
+    {
+      "path": "C:\\Users\\nrangasa.ORADEV\\git\\myrepo\\react-tutorial"
+    },
+    {
+      "path": "C:\\Users\\nrangasa.ORADEV\\git\\myrepo\\counter-app"
+    },
+    {
+      "path": "C:\\Users\\nrangasa.ORADEV\\git\\myrepo\\oopsjs"
+    },
+    {
+      "path": "C:\\Users\\nrangasa.ORADEV\\git\\dis\\current-dev"
+    },
+    {
+      "path": "C:\\Users\\nrangasa.ORADEV\\git\\dmsuitest\\dmsdevlatest\\dms\\ui"
+    }
+  ],
+  "settings": {
+    "python.pythonPath": "C:\\Program Files\\Python36\\python.exe",
+    "liveServer.settings.multiRootWorkspaceName": "oopsjs",
+    "editor.formatOnSave": true
+  }
 }

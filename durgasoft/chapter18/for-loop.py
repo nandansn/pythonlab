@@ -16,7 +16,7 @@ evens =[]
 odds=[]
 primes=[]
 j=1
-for i in range(1,5000):
+for i in range(1,50):
     if (i%2==0):
         evens.append(i)
     else:

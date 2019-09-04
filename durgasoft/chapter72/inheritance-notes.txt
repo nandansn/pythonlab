@@ -1,0 +1,27 @@
+Inheritance:
+1. single Inheritance
+    class P:
+        pass
+    class C(P):
+        pass
+
+2. multilevel Inheritance
+    class A: pass
+    class B(A): pass
+    class C(B): pass
+
+3. hierarchical:
+    class A: pass
+    class B(A): pass
+    class C(A): pass
+
+4. multiple heritance
+
+    class P: pass
+    Class Q; pass
+    class C(P,Q): pass
+
+    In pyhton method resolution happens based on the order we define for multiple intheritance.
+    
+5. Hybrid:
+    Combination of Single, multilevel and hierarchical.

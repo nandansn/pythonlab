@@ -1,0 +1,83 @@
+Employee has a Car
+Employee is a Person
+
+Ask Question,
+
+Employee are you going to extend Car functionality?
+    I am not Car manufacturer, I need to use the functionality only, then has a relationship.
+Employee  are you going to extend Person functionality?
+    If yes then Is a relationship or has a relationship. Use inheritance.
+
+
+When Inheritance:
+    For Is a relationship
+
+Types of inheritance:
+
+1. Single
+2. Multilevel
+3. Hierarchical
+4. Multiple
+5. Cyclic
+6. Hybrid
+
+1. Single
+One Parent, One child. Inheriting one class to another class.
+
+class P:
+    def m1():
+        print('parent')
+
+class C(P):
+    def m2():
+        print('child')
+        
+
+c = C()
+c.m1()
+c.m2() parent class methods available to child class.
+
+2. Multilevel
+class G:
+    def m1():
+        print('grand parent)
+
+class P(G):
+    def m2():
+        print('parent')
+
+class C(P):
+    def m3()
+        print('grand child')
+
+c = C()
+c.m3()
+c.m2()
+c.m1()
+
+Abstract class and interface, not available. But indirectly we can use it.
+
+3. Hierarchical inheritance
+one to many,
+
+class P:
+    def m1(self):
+        print('Parent..')
+
+class C1(P):
+    def m2(self):
+        print('Child 1...')
+
+class C2(P):
+    def m3(self):
+        print('Child 2...')
+
+c1 = C1()
+c1.m1()
+c1.m3()
+
+c2 = C2()
+c2.m1()
+c2.m3()
+
+Multiple Inheritance

@@ -1,0 +1,12 @@
+Abstract class:
+    class partially implemented.
+    when you inherit from ABC and the abstract class contains atleast one abstract method then you can't instantiate the class
+    abstract class can contain both abstract and normal methods
+    child classes are responsible to provide implementation of parent class abstract method 
+
+    code example:
+    from abc import *
+    class Vehicle(ABC): # ABC -> Abstract Base Class, ABC is not mandatory.
+        @abstractmethod
+        def getWheels(self):
+            pass

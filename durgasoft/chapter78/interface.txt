@@ -1,0 +1,3 @@
+Interface:
+---------
+If abstract class contains only abstract methods, then it is consideres as interface.

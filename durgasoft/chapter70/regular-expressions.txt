@@ -1,0 +1,70 @@
+Regular Expressions:
+    Main purpose is for pattern matching.
+    If group of strings, follow particular pattern, then we can go for regular expressions.
+
+    Application areas of regular expressions,
+        1. Validations or to develop validation framework.
+        2. pattern matching Application, ctrl + f, grep
+        3.compilers, interpreters, assembelers
+             Lexical analysis aka Scanning, implemented using Regular Expressions, Syntax analysis aka Parsing, Semantic analysis
+        4. To develop digital cicrcuits
+            Finite Automata 
+
+        5. communication protocols, tcp/ip, udp etc
+
+Python module
+    module: re
+    contains methods to develop regular expression programs
+
+    1. compile() 
+    converts pattern to regex object.
+    patternToRegxObject = re.compile('python')
+
+    2. finditer()
+    to check how many matches are available.
+    create matcher object,
+    matcher = pattern.matcher('sentence to look for matching pattern...')
+        in matcher object,
+            start() - start index of the match. example 'ab' in abaabbbab '0', '3', '7'
+            end() - end + 1 index of the match.
+            group() - returns mathced string
+    Character classes:
+        i want to search for a or b or c
+        [abc] a or b or c
+        [^abc] except a and b and c
+        [a-z] any chars a to z
+        [A-Z] any uppercase alphabhet symbols
+        [0-9] any digits
+        [a-zA-Z0-9] any alpha numeric
+        [^a-zA-Z0-9] any special chars
+
+    Pre-defined character classes:
+        \s - search for space character.
+        \S - except space character
+        \d - search for digits
+        \D - non-digits
+        \w - aplhanumeric chars
+        \W - any chars except word chars.
+        . - any character
+
+    quantifiers
+        used to specify number of occurences to match.
+        a - exactly one a
+        a+ - atleast one a
+        a* - anynumber of a, zero or more. including endIndex + 1
+        a? - atmost one a,
+                either one a or zero number of a's
+
+        a{n} - exactly n number of a's
+        a{n,m} - minimum n number of a's and maximum m number of a's
+
+    ^a - it will check whether the given string starts with a.
+    a$ - it will check whether the given string ends with a
+
+    functions:
+    a. match()
+    to check the given pattern a the begining of the string.
+    b. fullmatch()
+    complete string should be matched according to the string or not.
+    c. search()
+    Match object of the first occurence, else None

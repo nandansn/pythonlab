@@ -1,0 +1,3 @@
+To implement to string method in python like java,
+
+def __str__(self):

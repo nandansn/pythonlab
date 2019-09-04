@@ -1,0 +1,5 @@
+ERROR:root:Age is 999, this is invalid
+ERROR:root:Age is 222, this is invalid
+ERROR:root:Age is 222, this is invalid
+ERROR:root:Age is 2333, this is invalid
+CRITICAL:root:Age is 2333, this is invalid

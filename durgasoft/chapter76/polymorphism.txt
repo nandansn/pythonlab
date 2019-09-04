@@ -1,0 +1,10 @@
+polymorphism:
+    one name, many forms.
+
+1. Duck Typing Philosophy
+2. Overloading
+3. Overriding
+
+1. Duck Typing Philosophy,
+    At runtime based on the behaviour, object type will be decided.
+    example: walks like a Duck and talks like a duck then it is a Duck object.

@@ -1,0 +1,151 @@
+#version: "3.7"
+
+# image names: please see README.md for details and how to override
+
+#networks:
+#  default:
+#    # set domain name
+#    name:       dis-local
+#    #driver:     host
+#    #ipam:
+#    #  config:
+#    #  - subnet: 172.16.238.0/24
+
+#services:
+  #db:
+  #  container_name: db
+  #  image: \${DOCKER_COMPOSE_DMS_DB_IMAGE:-dipc-docker.dockerhub-den.oraclecorp.com/db-12.2.0.1-ssi}:\${DOCKER_COMPOSE_DMS_DB_TAG:-dicom-1.0.0-269}
+  #  ports:
+  #    - "1521:1521"
+  #  healthcheck:
+  #    test: [ "CMD-SHELL", "if [ `netstat -tulpn | grep LISTEN | grep 1521 | wc -l` == '1' ];  then exit 0; else exit 1; fi" ]
+  #    interval: 10s
+  #    timeout:  5s
+  #    retries:  10
+
+  metadata:
+    container_name: metadata
+    image: ${p.get('docker-compose.DIS_METADATA_OCI.image')?:'di-docker-local.artifactory.oci.oraclecorp.com/dis-metadata-oci'}:${p.get('docker-compose.DIS_METADATA_OCI.tag')?:'1.0.0-225'}
+    #network_mode: host
+    net: "bridge"
+    ports:
+      - "33301:8082"   # Service port
+    environment:
+      # Stop Jaeger Client to try hostname resolution. This does not work on docker. For more details: https://github.com/jaegertracing/jaeger/issues/742
+      - JAEGER_TAGS="hostname=localhost"
+      - DI_DEBUG
+      - ENV_OVERRIDE=docker-compose
+    #links:
+    #  - db
+    volumes:
+      - \${PROJECT_BUILD_DIR}/docker-compose/etc/region:/etc/region:rw
+      - \${PROJECT_BUILD_DIR}/docker-compose/etc/availability-domain:/etc/availability-domain:rw
+      - \${PROJECT_BUILD_DIR}/docker-compose/etc/tenancy-ocid:/etc/tenancy-ocid:rw
+      - \${PROJECT_BUILD_DIR}/docker-compose/etc/compartment-ocid:/etc/compartment-ocid:rw
+      - \${PROJECT_BUILD_DIR}/logs:/logs:rw
+    #healthcheck:
+    #  test: [ "CMD-SHELL", "/postDeployValidate.sh" ]
+    #  interval: 10s
+    #  timeout:  5s
+    #  retries:  10
+
+  dataflow-service:
+    container_name: dataflow-service
+    image: ${p.get('docker-compose.DATAFLOW_SERVICE.image')?:'di-docker-local.artifactory.oci.oraclecorp.com/dataflow-oci'}:${p.get('docker-compose.DATAFLOW_SERVICE.tag')?:'1.0.0-225'}
+    net: "bridge"
+    ports:
+      - "33600:33600"
+      - "33700:5005"
+    links:
+      - metadata
+    environment:
+      - DI_DEBUG
+      - ENV_OVERRIDE=docker-compose
+    volumes:
+      - \${PROJECT_BUILD_DIR}/docker-compose/etc/region:/etc/region:rw
+      - \${PROJECT_BUILD_DIR}/docker-compose/etc/availability-domain:/etc/availability-domain:rw
+      - \${PROJECT_BUILD_DIR}/docker-compose/etc/tenancy-ocid:/etc/tenancy-ocid:rw
+      - \${PROJECT_BUILD_DIR}/docker-compose/etc/compartment-ocid:/etc/compartment-ocid:rw
+      - \${PROJECT_BUILD_DIR}/logs:/logs:rw
+
+  #####################
+  # DICOM CONTAINERS
+
+  connectivity:
+    container_name: connectivity
+    image: ${p.get('docker-compose.DICOM_CONNECTIVITY_OCI.image')?:'di-docker-local.artifactory.oci.oraclecorp.com/dicom-connectivity-oci'}:${p.get('docker-compose.DICOM_CONNECTIVITY_OCI.tag')?:p.get('docker-compose.DICOM_VERSION.tag')}
+    net: "bridge"
+    ports:
+      - "33302:8081"
+      - "33202:5005"
+    links:
+      - metadata
+      - agent-manager
+    environment:
+      - DI_DEBUG
+      - ENV_OVERRIDE=docker-compose
+    volumes:
+      - \${PROJECT_BUILD_DIR}/docker-compose/etc/region:/etc/region:rw
+      - \${PROJECT_BUILD_DIR}/docker-compose/etc/availability-domain:/etc/availability-domain:rw
+      - \${PROJECT_BUILD_DIR}/docker-compose/etc/tenancy-ocid:/etc/tenancy-ocid:rw
+      - \${PROJECT_BUILD_DIR}/docker-compose/etc/compartment-ocid:/etc/compartment-ocid:rw
+      - \${PROJECT_BUILD_DIR}/logs:/logs:rw
+      
+  agent-manager:
+    container_name: agent-manager
+    image: ${p.get('docker-compose.AGENT_MANAGER_OCI.image')?:'di-docker-local.artifactory.oci.oraclecorp.com/agent-manager-oci'}:${p.get('docker-compose.AGENT_MANAGER_OCI.tag')?:p.get('docker-compose.DICOM_VERSION.tag')}
+    net: "bridge"
+    ports:
+      - "33303:8087"
+      - "33203:5005"
+    environment:
+      - DI_DEBUG
+      - ENV_OVERRIDE=docker-compose
+    volumes:
+      - \${PROJECT_BUILD_DIR}/docker-compose/etc/region:/etc/region:rw
+      - \${PROJECT_BUILD_DIR}/docker-compose/etc/availability-domain:/etc/availability-domain:rw
+      - \${PROJECT_BUILD_DIR}/docker-compose/etc/tenancy-ocid:/etc/tenancy-ocid:rw
+      - \${PROJECT_BUILD_DIR}/docker-compose/etc/compartment-ocid:/etc/compartment-ocid:rw
+      - \${PROJECT_BUILD_DIR}/logs:/logs:rw
+
+#  agent:
+#    container_name: agent
+#    image: ${p.get('docker-compose.DIS_AGENT_OCI.image')?:'di-docker-local.artifactory.oci.oraclecorp.com/dis-agent-oci'}:${p.get('docker-compose.DIS_AGENT_OCI.tag')?:p.get('docker-compose.DICOM_VERSION.tag')}
+#    net: "bridge"
+#    ports:
+#      - "7005:7005"
+#    links:
+#      - agent-manager
+#      - metadata
+#    environment:
+#      - agentManagerServiceHost=agent-manager
+#      - agentManagerServicePort=8087
+#      - tenantId=4321
+#      - agentAggregatorId=1234
+#    volumes:
+#      - \${PROJECT_BUILD_DIR}/docker-compose/config/di-global.conf:/etc/runit/artifacts/agent-docker/build/config/di-global.conf:rw
+#      - \${PROJECT_BUILD_DIR}/docker-compose/environment-config/di-global.env:/etc/runit/artifacts/agent-docker/build/environment-config/di-global.env:rw
+#      - \${PROJECT_BUILD_DIR}/docker-compose/etc/region:/etc/region:rw
+#      - \${PROJECT_BUILD_DIR}/docker-compose/etc/availability-domain:/etc/availability-domain:rw
+#      - \${PROJECT_BUILD_DIR}/docker-compose/etc/tenancy-ocid:/etc/tenancy-ocid:rw
+#      - \${PROJECT_BUILD_DIR}/docker-compose/etc/compartment-ocid:/etc/compartment-ocid:rw
+#      - \${PROJECT_BUILD_DIR}/logs:/logs:rw
+
+  #####################
+  # BusyBox, handy for checking things inside docker-compose network
+  # For login
+  #     docker exec busybox -ti /bin/bash
+  # Useful commands:
+  #     wget --no-check-certificate https://dms-ui:8484
+  #busybox:
+  #  container_name: busybox
+  #  image: busybox
+  #  command: top -d 3600
+  #  net: "bridge"
+  #  links:
+  #    - metadata
+  #    - agent-manager
+  #    - connectivity
+  #    - dataflow-service
+  #  extra_hosts:
+  #    - "outside:\${DOCKER_HOST_IP}"

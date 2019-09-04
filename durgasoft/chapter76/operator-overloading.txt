@@ -1,0 +1,16 @@
+Operator Overloading:
++
+1+2 = 3
+'nanda' + 'kumar' =nandakumar
+
+*
+1*2 = 2
+'nanda'*2 = nandananda
+
+To overload arithmetic operator in your class:
+Magic methods:
+    for every operator, magic methods available, we can overload magic methods in our class
+    order of parameters important
+examples:
++ --> __add__()
+< --> __lt__()

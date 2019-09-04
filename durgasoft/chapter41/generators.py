@@ -1,0 +1,7 @@
+l=((x*x for x in range(1000000000000000000000000000000000000000000000000000000000000000000000000))) # generators, this is not tuple.
+#l=[(x*x for x in range(1000000000000000000000000000000000000000000000000000000000000000000000000))]- stored in memory,
+for i in l:
+    print(i)
+
+
+# yield keyword used to generate.

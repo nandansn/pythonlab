@@ -1,0 +1,17 @@
+Regular expressions:
+    Important functions:
+    1. findall()
+        Returns matched objects in list
+
+    2. findtier()
+        Returns iterator of matched objects
+    3. sub()
+        substitution or replacement, finds the mathced object and replaces with provided object
+    4. subn()
+        substitution or replacement, finds the mathced object and replaces with provided object
+        and returns in tuple
+        tuple[0] - returns the replaced text
+        tuple[1] - returns the number of replacement 
+    5. split()
+        split the text based on pattern that matched.
+

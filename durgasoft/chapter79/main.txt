@@ -1,0 +1,4 @@
+if __name__ == '__main__':
+    test_fun1()
+
+if you are executing the module directly, then that is the main, __name__ becomes __main__, then call the below function

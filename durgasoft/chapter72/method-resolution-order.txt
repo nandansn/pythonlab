@@ -1,0 +1,12 @@
+Method - Resolution - Order (MRO) :
+    C3 Algorithm
+    Linearization
+
+    A, B , C, D, E, F, Object
+
+    class D: pass
+    class E: pass
+    class F: pass
+    class B(D,E): pass
+    class C(D,F): pass
+    class A(B,C): pass

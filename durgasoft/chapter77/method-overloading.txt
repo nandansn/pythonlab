@@ -1,0 +1,20 @@
+Method overloading:
+    Method overloading concept not applicable, because, you won't specify types of params.
+    Not valid:
+        m1(x)
+        m1(y)
+
+    not Valid:
+        class Test:
+            def m1(self):
+                print('no-arg method')
+
+            def m2(self, a):
+                print('one arg method')
+
+            def m3(self, a, b):
+                print('two arg method')
+
+
+Constructor overloading:
+    Constructor overloading not applicable.

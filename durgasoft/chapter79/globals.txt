@@ -1,0 +1,5 @@
+globals():
+---------
+1. convert string name to classname object
+example:
+    globals()[dbname]

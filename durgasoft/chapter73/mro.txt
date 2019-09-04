@@ -1,0 +1,18 @@
+MRO Rules:
+1. first priority for child class methods,
+2. if child class does not contain methods, then look for parent class methods,
+3. If there are multiple parent, order of searching will be left to right.
+4. MRO, python will visit any class only once.
+
+Linearizarion.
+L(c) = c + merge (L(P1),L(P2),,,ParentList)
+
+If the object present in head part only, not in tail part of any list remove it and add.
+
+L(C) = C + merge(L(P1) , L(P2), P1P2)
+        C + Merge (P1O, P2O, P1P2)
+        C + P1 + Merge(O, P2O, P2)
+
+        C + P1 + P2 Merge(O,O)
+
+        C + P1 + P2 + O

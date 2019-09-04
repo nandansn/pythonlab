@@ -1,0 +1,5 @@
+overriding:
+    whatever methods, constructors present in  present in parent class , available to child class as well.
+    constructor overriding possible
+
+

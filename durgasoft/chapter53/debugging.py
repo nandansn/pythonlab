@@ -1,0 +1,4 @@
+'''
+Assert statements
+Augmented version
+'''

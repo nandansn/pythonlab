@@ -1,0 +1,10 @@
+Abstract method:
+    abstract means, not complete/detail, just a summary/overview.
+    method which has only declaration, not implementation.
+    code example:
+    -------------
+    from abc import *
+    class Vehicle:
+        @abstractmethod
+        def getWheels(self):
+            pass

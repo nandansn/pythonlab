@@ -1,0 +1,38 @@
+Inheritance and Polymorphism
+
+How we can use memebers of one class inside another class?
+    1. By using composition
+        Has-A-Relationship
+    2. By using Inheritance
+        Is-A-Relationship
+
+By using composition:
+
+class car has a engine reference.
+Advantage is code re-usability.
+
+class Car
+
+e = Engine()
+
+class Engine
+
+
+By using inheritance:
+    variables
+    methods
+    contructors
+    all above available to child class
+
+contructor:
+    if child class contains contructor, child class constructor only executed.
+    if child class contains destructor, child class destructor only executed.
+    if child class contains instance/class/static method, child class insance/class/static method only executed. instance/static/class methods with same name.
+
+super():
+    using super(), we can explicitly call instance/class/static methods of parent class.
+    using super(), we can explicitly call static variable
+    We can't access parent class instance varaibles using super()
+
+
+parent class contructor/memebers by default available to the child.

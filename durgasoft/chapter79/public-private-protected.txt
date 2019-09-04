@@ -1,0 +1,14 @@
+public, private, protected:
+--------------------------
+public:
+    by default all variables in python are public in a class, x = 10
+private:    
+    to declare a variable as private, need to use, __x = 10
+    private variables, within the class only
+protected:
+    protected is not implemented in python,
+    just for conventional thing we use like, _x=10, means, this is protected, we can use in child class.
+
+Note:
+    we can access the private variable in directly in python.
+

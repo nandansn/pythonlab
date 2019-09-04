@@ -1,0 +1,24 @@
+super():
+    using super we can access parent class, class variable.
+    using super we can access parent class, instance methods.
+    using super we can access parent class, class methods.
+    using super we can access parent class, static methods.
+    instance variable can be accessed using self keyword of the child classs
+
+Inside class:
+    1. we can use super in side instance method of child class.
+        1. instance method: no restriction to use super()
+        2. constructor method: no restriction to use super()
+    2. class method: 
+        from class method we cant call parent class constructos using super()
+        from class method we cant call parent class instance method using super()
+        from class method, we can access static variable, static method and class method using super()
+    3. static method:
+           we cant access static variable using super()
+           we cant access parent class constructor using super()
+           we cant access parent class instance method using super()
+           we cant access parent class class method using super()
+           we cant access parent class  static method using super()
+           static is general utility method, no way related to class or instance. super() is not applicable inside static method
+ 
+

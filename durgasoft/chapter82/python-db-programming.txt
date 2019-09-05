@@ -1,0 +1,18 @@
+Python database programming:
+---------------------------
+    1. Temp storage
+    2. Permanent storage
+
+
+1. Temp Storage:
+    1. Python temp storage list, tuple, dict
+
+2. Permanent storage:
+    1. File
+    2. Database
+
+    1. File Systems limitations:
+        1. security for data
+        2. less amount of info
+        3. Query language support not there
+        4. duplicate data reduced

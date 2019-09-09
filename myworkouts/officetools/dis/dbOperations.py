@@ -48,3 +48,9 @@ def describeTable(tableName):
     print(describeQuery)
     dbutil.executeDescribe(describeQuery)
     print('table description..')
+
+def standardQuery(tableName, columnNames, whereCondition):
+    pass
+
+def customQuery(customQuery):
+    pass

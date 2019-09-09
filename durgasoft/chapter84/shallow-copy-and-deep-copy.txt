@@ -1,0 +1,25 @@
+Shallow-Copy-And-Deep-Copy:
+--------------------------
+copy function:
+    because of copy function new object will be created, this is called cloning.
+
+    
+
+shallow copy:
+    if the original object contains reference to the mutable object(like list), 
+    just duplicate reference variables will be created, pointing to old contained object.
+
+    example : [1,2,3,[7,8,9],4,5,6]
+    for [7,8,9] reference will be created.
+
+    import copy - > module
+    object2 = copy.copy(object1)
+
+    
+deep copy:
+
+    copy.deepcopy()
+    created new object for muted reference in the contained object
+
+Usage:
+    if the original object does not contain any nested mutable object go for shallow copy, otherwise go for deepcopy.

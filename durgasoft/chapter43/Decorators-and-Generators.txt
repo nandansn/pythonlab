@@ -1,0 +1,10 @@
+Decorator chaining:
+Need to search and learn
+
+Generator:
+    To avoid 
+        Memeory error
+        for : [x*x for x in range(10000000000000000000000000)] - memory crashed, because value get stored in memory and retrieved.
+
+        solution: (x*x for x in range (1000000000000000000000000000)) - value wont get stored in memory.
+         

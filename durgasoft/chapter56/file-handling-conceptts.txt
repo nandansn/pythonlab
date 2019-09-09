@@ -1,0 +1,3 @@
+Handling binary data:
+    read images
+    video files

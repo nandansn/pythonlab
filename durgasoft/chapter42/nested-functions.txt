@@ -1,0 +1,3 @@
+Nested Functions:
+    1. Write only once, use any number of times.
+    2. Scope, is within the function. Means, the required funcionality is not used outside the function. Then go for nested functions

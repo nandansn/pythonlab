@@ -1,0 +1,6 @@
+1. driver:
+    driver is module that enables access to db. 
+    translator to convert python specific calls to db specific and viceversa. 
+    for oracle we use cx_Oracle driver to access oracle database
+    to install any module in python 
+        pip install cx_Oracle

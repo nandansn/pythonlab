@@ -13,6 +13,7 @@ def createConnection():
     return db_conn.cursor()
 
 def executeDDL(queryToExecute):
+    global cursor 
     cursor = createConnection()
     try:
         cursor.execute(queryToExecute)
@@ -33,5 +34,6 @@ def executeDescribe(queryToExecute):
 def closeConnection():
     global db_conn
     if db_conn != None:
+        cursor.close()
         db_conn.close()
 

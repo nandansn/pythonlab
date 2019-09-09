@@ -1,5 +1,6 @@
 import dbOperations as dbOps
 import dbutils as dbu
+from dbConsoleDisplay import Display
 
 
 connection = True
@@ -12,7 +13,8 @@ while (connection):
     4. Drop columns
     5. Describe table
     6. Alter table
-    7. Exit
+    7. Query Records
+    0. Exit
     ''')
 
 
@@ -20,18 +22,8 @@ while (connection):
 
     
     if option == 1 :
-        print('''
-        Create table from existing table or new table?
-            1. From existing table.
-            2. New table
-        ''')
-        createOption = int(input('Enter create table option: '))
-
-        if createOption == 1:
-            existingTableName = str(input('Enter existing table name:'))
-            columnNames = str(input('Enter column names seperated by comma:'))  
-            tableName = str(input('Table name:'))  
-            dbOps.createTable(existingTableName, columnNames, tableName)
+        existingTableName, columnNames, tableName = Display.create()
+        dbOps.createTable(existingTableName, columnNames, tableName)
     elif option == 2:
         tableName = str(input('Table name:'))  
         dbOps.dropTable(tableName)
@@ -65,6 +57,22 @@ while (connection):
             dbOps.modifyTableColumns(tableName,columnNameType)
 
     elif option == 7:
+        print('''
+                1. Standard
+                2. Custom
+        ''')
+        queryOption = int(input('Enter query option:'))
+        tableName = str(input('Table name:'))
+        if queryOption == 1 :
+            columnNames = str(input('Enter column names seperated by comma:'))
+            condition = str (input('Enter simple where condition:'))
+            # call standard query 
+            # display the result
+        if queryOption == 2:
+            customQuery = str(input('Enter custom query:'))
+            # call custom query 
+            # display the result
+    elif option == 0:
         connection = False
         dbu.closeConnection()
         pass

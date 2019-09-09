@@ -1,0 +1,2 @@
+Input Function ==> Decorator Function ==> Output Function with extended functionality, without modifying the core functionality
+Multiply decorators can be applied for same function

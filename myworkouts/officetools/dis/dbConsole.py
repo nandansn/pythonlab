@@ -6,21 +6,9 @@ from dbConsoleDisplay import Display
 connection = True
 
 while (connection):
-    print('''
-    1. Create table
-    2. Drop table
-    3. Truncate table
-    4. Drop columns
-    5. Describe table
-    6. Alter table
-    7. Query Records
-    0. Exit
-    ''')
-
-
-    option = int(input('Enter option:'))    
-
     
+    option = Display.menu()
+
     if option == 1 :
         existingTableName, columnNames, tableName = Display.create()
         dbOps.createTable(existingTableName, columnNames, tableName)
@@ -38,14 +26,7 @@ while (connection):
         tableName = str(input('Table name:'))  
         dbOps.describeTable(tableName)
     elif option == 6:
-        print('''
-                1. Drop columns
-                2. Add columns
-                3. Modify columns
-         ''')
-         
-        alterOption = int(input('Enter alter option:'))
-        tableName = str(input('Table name:'))  
+        tableName,alterOption = Display.alter()
         if alterOption == 1:
             columnNames = str(input('Enter column names, seperated by comma:'))
             dbOps.dropTableColumns(tableName,columnNames)      
@@ -55,17 +36,12 @@ while (connection):
         if alterOption == 3:
             columnNameType = str(input('Enter column name and type[like: Name varchar2(100), Age number], seperated by comma:'))
             dbOps.modifyTableColumns(tableName,columnNameType)
-
     elif option == 7:
-        print('''
-                1. Standard
-                2. Custom
-        ''')
-        queryOption = int(input('Enter query option:'))
-        tableName = str(input('Table name:'))
+        tableName, queryOption = Display.query()
         if queryOption == 1 :
             columnNames = str(input('Enter column names seperated by comma:'))
             condition = str (input('Enter simple where condition:'))
+            dbOps.standardQuery(tableName,columnNames,condition)
             # call standard query 
             # display the result
         if queryOption == 2:
@@ -75,7 +51,5 @@ while (connection):
     elif option == 0:
         connection = False
         dbu.closeConnection()
-        pass
-
 
 

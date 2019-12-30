@@ -1,0 +1,7 @@
+Uptrend Rule:
+    White marubozu in uptrend indicates it continuation.
+Downtrend Rule:
+    White marubozu in downtrend indicates it reversal.
+Alert:
+    Bearish Tsauki Line, White and Black Marubozu. Make sure there is no Tsauki line after White marubozu.
+

@@ -31,6 +31,20 @@ def executeDescribe(queryToExecute):
     except cx_Oracle.DatabaseError as dbError:
         print(dbError)
  
+def executeSelect(queryToExecute):
+    cursor = createConnection()
+    try:
+        cursor.execute(queryToExecute)
+        for column in cursor.description:
+                print(column)
+        
+        res = cursor.fetchmany(3)
+        
+        for record in res:
+            print(record)
+    except cx_Oracle.DatabaseError as dbError:
+        print(dbError)
+
 def closeConnection():
     global db_conn
     if db_conn != None:

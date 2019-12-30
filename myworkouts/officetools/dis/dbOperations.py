@@ -50,7 +50,12 @@ def describeTable(tableName):
     print('table description..')
 
 def standardQuery(tableName, columnNames, whereCondition):
-    pass
+    if whereCondition == '' or whereCondition == None :
+        standardSelectQuery ="select {0} from {1}".format(columnNames, tableName)
+    else:
+        standardSelectQuery ="select {0} from {1} where {2}".format(columnNames, tableName, whereCondition)
+    print(standardSelectQuery)
+    dbutil.executeSelect(standardSelectQuery)
 
 def customQuery(customQuery):
     pass

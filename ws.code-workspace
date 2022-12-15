@@ -4,60 +4,18 @@
       "path": "."
     },
     {
-      "path": "C:\\Users\\nrangasa.ORADEV\\webiotest"
+      "path": "../master"
     },
     {
-      "path": "C:\\Users\\nrangasa.ORADEV\\git\\myrepo\\javascript"
+      "path": "../nivrithi"
     },
     {
-      "path": "C:\\Users\\nrangasa.ORADEV\\git\\myrepo\\webdriveriosample"
-    },
-    {
-      "path": "C:\\Users\\nrangasa.ORADEV\\git\\myrepo\\advancedjs"
-    },
-    {
-      "path": "C:\\Users\\nrangasa.ORADEV\\git\\dis\\dev\\dis\\ui\\src\\main\\webapp"
-    },
-    {
-      "path": "C:\\Users\\nrangasa.ORADEV\\git\\myrepo\\react-tutorial"
-    },
-    {
-      "path": "C:\\Users\\nrangasa.ORADEV\\git\\myrepo\\counter-app"
-    },
-    {
-      "path": "C:\\Users\\nrangasa.ORADEV\\git\\myrepo\\oopsjs"
-    },
-    {
-      "path": "C:\\Users\\nrangasa.ORADEV\\git\\dis\\current-dev"
-    },
-    {
-      "path": "C:\\Users\\nrangasa.ORADEV\\git\\dmsuitest\\dmsdevlatest\\dms\\ui"
-    },
-    {
-      "path": "C:\\Users\\nrangasa.ORADEV\\git\\myrepo\\shellscripting"
-    },
-    {
-      "path": "C:\\Users\\nrangasa.ORADEV\\git\\oow\\dis\\ui"
-    },
-    {
-      "path": "C:\\Users\\nrangasa.ORADEV\\git\\myrepo\\groovy"
-    },
-    {
-      "path": "C:\\Users\\nrangasa.ORADEV\\Desktop\\nanda"
-    },
-    {
-      "path": "C:\\Users\\nrangasa.ORADEV\\git\\myrepo\\docker"
-    },
-    {
-      "path": "D:\\git\\oracle\\dis\\ui"
-    },
-    {
-      "path": "D:\\git\\oracle\\disdocker\\dis\\docker-compose"
+      "path": "../../web-app/nsn"
     }
   ],
   "settings": {
     "python.pythonPath": "C:\\Program Files\\Python36\\python.exe",
-    "liveServer.settings.multiRootWorkspaceName": "oopsjs",
+    "liveServer.settings.multiRootWorkspaceName": "nsn",
     "editor.formatOnSave": true
   }
 }
